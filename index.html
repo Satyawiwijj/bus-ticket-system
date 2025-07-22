@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Available Buses</title>
+</head>
+<body>
+    <h2>Available Buses</h2>
+    {% for bus in buses %}
+        <p>{{ bus.route }} - {{ bus.time }} - Seats: {{ bus.seats }}
+        <a href="/book/{{ bus.id }}">Book</a></p>
+    {% endfor %}
+</body>
+</html>
