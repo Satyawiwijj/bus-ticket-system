@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h2>Your Bookings</h2>
+    {% for booking in bookings %}
+        <p>Bus ID: {{ booking.bus_id }}</p>
+    {% endfor %}
+</body>
+</html>
