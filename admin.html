@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin - Add Bus</title></head>
+<body>
+    <h2>Add New Bus</h2>
+    <form method="POST">
+        <input name="route" placeholder="Route">
+        <input name="time" placeholder="Time">
+        <input name="seats" placeholder="Seats">
+        <button type="submit">Add Bus</button>
+    </form>
+    <hr>
+    <h3>Existing Buses</h3>
+    {% for bus in buses %}
+        <p>{{ bus.route }} - {{ bus.time }} - Seats: {{ bus.seats }}</p>
+    {% endfor %}
+</body>
+</html>
